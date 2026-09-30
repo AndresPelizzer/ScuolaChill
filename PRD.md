@@ -117,3 +117,30 @@ Faccio Login - entro all'interno del corso - non sono iscritto al corso! -> visu
 # DOC-003
 
 - Come docente, voglio poter visualizzare l'orario settimanale con le classe assegnatomi, cosi dà sapere in che classe fare lezione
+
+# DOC-004
+
+- Come docente, voglio poter inserire la descrizione e il tipo di lezione (spiegazione,interrogazione,ecc) così che i miei studenti abbiano un riferimento chiaro di quanto visto a lezione
+
+# DOC-005
+
+- Come docente, voglio poter visualizzare le lezioni passate , così dà avere un riepilogo chiaro di quanto svolto in classe
+
+# DOC-006
+
+- Come docente, voglio poter inserire delle annotazioni , così da punire lo studente abbassandogli il voto di comportamento
+
+# Requisiti non funzionali
+
+# ID - Famiglia - Requisito - Soglia e condizione - Come si verifica - Storie collegate
+
+NFR-01 - Prestazioni - Aggiornamento voti - Meno di 3 secondi per aggiornare il voto - Test di carico - DOC-001
+
+NFR-02 - Prestazioni - Apertura dell'orario nel picco - Almeno 5 docenti nello stesso minuto -
+Test di carico - DOC-003
+
+NFR-03 - Usabilità - Accesso veloce alla bacheca - Due tasti per accedere - Consulto con studente - STU-003
+
+NFR-04 - Usabilità - Accesso veloce al registro studenti - Due tasti per accedere - Consulto con studente - DOC-002
+
+NFR-05 - Usabilità - Accesso veloce al materiale dei docenti - Due tasti per accedere - Consulto con studente
