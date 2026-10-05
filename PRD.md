@@ -1,32 +1,76 @@
-# PRD di ScuolaChill · Team [Andres.exe]
+# PRD di ScuolaChill · Team Andres.exe
 
-Prodotto | ScuolaChill
-Team | Andres.exe
-Autori | Andres Pelizzer (Numero membri : 1)
-Versione | 1.0
-Data | 23/09/2026
-Stato | Bozza
+## Informazioni sul documento
 
-# Storico delle versioni
+|              | Valore                     |
+| ------------ | -------------------------- |
+| **Prodotto** | ScuolaChill                |
+| **Team**     | Andres.exe                 |
+| **Autori**   | Andres Pelizzer (1 membro) |
+| **Versione** | 1.0                        |
+| **Data**     | 23/09/2026                 |
+| **Stato**    | Bozza                      |
 
-Versione | 1.0
-Data | 23/09/2026
-Autore | Andres
-Cambiamenti | Nessuno (Prima stesura)
+### Storico delle versioni
 
-# Prima parte · Il cosa
+| Versione | Data       | Autore          | Cosa è cambiato e perché |
+| -------- | ---------- | --------------- | ------------------------ |
+| 1.0      | 23/09/2026 | Andres Pelizzer | Prima stesura            |
 
-# Scopo e perimetro
+## Scopo e perimetro
 
-# Perché esiste ScuolaChill
+### Perché esiste ScuolaChill
 
-# Dal lato business
+**Dal lato business.** In una scuola il materiale didattico, le verifiche e i voti
+passano spesso da strumenti diversi, e chi dirige l'istituto fatica ad avere una
+visione d'insieme. ScuolaChill riunisce tutto in un unico posto: il Direttore
+controlla l'andamento della scuola, i docenti gestiscono materiale, verifiche e voti
+senza lavoro doppio, gli studenti trovano ciò che serve per studiare senza chiedere
+a nessuno.
 
-L'applicazione ScuolaChill è un gestionale scolastico utilizzabile da studenti, docenti e direttore. Questo software permette di dirigere le attività principali dell'istituto come inserimento e visualizzazione delle valutazioni o come la gestione delle presenze in aula. É disponibile anche la versione mobile di ScuolaChill.
+**Dal lato tecnico.** ScuolaChill è un sistema web con tre ruoli, ognuno con permessi
+diversi. Il Direttore crea gli account e le classi e ha visibilità completa su ciò
+che accade nell'istituto. Il Docente carica il materiale didattico, crea le verifiche
+e registra le valutazioni. Lo Studente consulta materiali e voti e svolge le verifiche
+che gli vengono assegnate. Ogni utente accede con le proprie credenziali e può fare
+solo ciò che il suo ruolo prevede. Il sistema è utilizzabile sia da PC sia da
+smartphone.
 
-# Dal lato tecnico
+### Cosa è incluso
 
-Dal punto di vista tecnico, si tratta di un applicazione fullstack costituita da 3 ruoli: direttore, che possiede controllo completo su ciò che accade all'interno dell'istituto, docente , che oltre a creare materiale didattico e verifiche può registrare le valutazioni , e studente. Quest'ultimo potrà svolgere le verifiche assegnatogli e consultare materiali e voti.
+**Il Direttore**
+
+- crea gli account di docenti e studenti e disattiva l'accesso di un docente quando serve, senza cancellare ciò che ha scritto;
+- crea le classi, vi assegna gli studenti e i docenti con le rispettive materie, e nomina per ogni classe un docente coordinatore;
+- crea e modifica l'orario dei docenti;
+- consulta la vista complessiva della scuola, compresa la media dei voti di ogni classe;
+- pubblica le circolari per studenti e docenti, e può scrivere annotazioni sugli studenti.
+
+**Il Docente**
+
+- carica il materiale didattico per le proprie classi e materie;
+- crea le proprie verifiche e assegna i voti agli studenti (numeri interi da 1 a 10);
+- scrive nell'agenda le lezioni svolte (descrizione e tipo di lezione) e rivede quelle passate;
+- scrive annotazioni sugli studenti;
+- se è coordinatore di classe, consulta le annotazioni degli studenti della classe e inserisce il voto di comportamento per la pagella.
+
+**Lo Studente**
+
+- consulta il materiale didattico dei docenti della propria classe;
+- svolge le verifiche assegnate alla propria classe;
+- consulta i propri voti raggruppati per materia, la propria pagella e le proprie annotazioni;
+- consulta l'agenda delle lezioni e le circolari.
+
+**Per tutti**
+
+- l'accesso avviene con credenziali personali, e ogni utente può fare solo ciò che il suo ruolo prevede.
+
+### Cosa non è incluso
+
+- **Gestione delle presenze e delle assenze.** Si assume che la scuola la gestisca già con un altro sistema (vedi Assunzioni).
+- **Comunicazioni con le famiglie.** Servirebbe un quarto ruolo, la Famiglia, con account, collegamento allo studente e permessi propri. Per un progetto sviluppato da una sola persona il costo è troppo alto per la versione 1.0.
+- **Modifica da parte del Direttore delle lezioni scritte dai docenti.** Ogni lezione può essere modificata solo da chi l'ha scritta, per mantenere affidabile il registro. Se un docente lascia la scuola, le sue lezioni restano invariate.
+- **Minigame e chatbot di navigazione.** Idee per versioni future.
 
 # STAKEHOLDER
 
