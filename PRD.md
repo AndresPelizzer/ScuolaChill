@@ -72,19 +72,15 @@ smartphone.
 - **Modifica da parte del Direttore delle lezioni scritte dai docenti.** Ogni lezione può essere modificata solo da chi l'ha scritta, per mantenere affidabile il registro. Se un docente lascia la scuola, le sue lezioni restano invariate.
 - **Minigame e chatbot di navigazione.** Idee per versioni future.
 
-# STAKEHOLDER
+## Stakeholder
 
-# Stakeholder - Cosa fa - Cosa gli interessa - Come lo coinvolgete
-
-Docente del corso - Valida PRD, aiuta studente con il progetto ScuolaChill - PRD efficiente, impegno costante durante realizzazione dell'applicazione, rispetto delle scadenze , buone pratiche nell'uso del codice - Presentazione PRD, discussione sul progetto ScuolaChill
-
-Direttore - Valuta qualità prodotto finale - Applicativo efficiente,funzionale,sicuro e facilmente adoperabile da studenti e docenti - Test periodici dell'applicazione con aggiunta di feedback
-
-Docenti - Utilizzano l'applicativo quotidianamente e ne valutano la praticità - Interfaccia intuitiva, assenza di bug , riduzione tempi di compilazione - Interviste iniziali sul vecchio gestionale e sessioni test comparativi con ScuolaChill
-
-Studenti - Utilizzano l'applicativo quotidianamente - Applicativo performante , fruibile e interattivo - Test periodici del gestionale con raccolta feedback e confronto con il vecchio applicativo
-
-Collaudatori del primo anno - Testano l'applicazione e ne valutano la buona riuscita - Applicativo finale efficiente e semplice da utilizzare - Facendo testare l'applicativo e dando dei consigli sulla buona riuscita
+| Stakeholder                 | Cosa fa                                                         | Cosa gli interessa                                                                                                   | Come lo coinvolgete                                                                       |
+| --------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Docente del corso           | Valida il PRD e aiuta lo studente nello sviluppo di ScuolaChill | PRD efficace, impegno costante durante la realizzazione, rispetto delle scadenze, buone pratiche nell'uso del codice | Presentazione del PRD e discussione sul progetto                                          |
+| Direttore                   | Valuta la qualità del prodotto finale                           | Applicativo efficiente, funzionale, sicuro e facile da usare per studenti e docenti                                  | Test periodici dell'applicazione con raccolta di feedback                                 |
+| Docenti                     | Usano l'applicativo ogni giorno e ne valutano la praticità      | Interfaccia intuitiva, assenza di bug, riduzione dei tempi di compilazione                                           | Interviste iniziali sul vecchio gestionale e sessioni di test comparativo con ScuolaChill |
+| Studenti                    | Usano l'applicativo ogni giorno                                 | Applicativo veloce, facile da usare e interattivo                                                                    | Test periodici con raccolta di feedback e confronto con il vecchio applicativo            |
+| Collaudatori del primo anno | Testano l'applicazione e ne valutano la riuscita                | Applicativo finale efficiente e semplice da usare                                                                    | Sessioni di collaudo con raccolta di consigli                                             |
 
 # DESTINATARI E CONTESTI D'USO
 
@@ -103,6 +99,8 @@ Connettività - Wifi scolastico condiviso, rete mobile degli studenti
 ARC001 - Direttore - Trasferimento studente da una classe ad un altra - ... - PC - ...
 ARC002 - Studente - Visualizzazione materiale didattico - ... - PC in aula / Telefono in corridoio - ...
 ARC003 - Docente - Inserimento valutazioni - ... - PC in aula/PC a casa - ...
+ARC004 - Docente - Inserimeto descrizione lezioni - ... - PC in aula/PC a casa - ...
+ARC005 - Studente - Visualizzazione valutazioni - ... - Telefono in corridoio, in aula , a casa | PC in aula e casa - ...
 
 # Panoramica e casi d'uso
 
@@ -138,17 +136,33 @@ Faccio Login - entro all'interno del corso - non sono iscritto al corso! -> visu
   SCENARIO NEGATIVO
   Faccio Login - entro all'interno del corso -> clicco sulla sezione bacheca
 
+# STU-004
+
+- Come studente, voglio poter accedere all'agenda, così da visualizzare le lezioni passate svolte dai docenti ( fondamentale se ero assente)
+
+# STU-005
+
+- Come studente, voglio poter accedere al mio profilo, in modo da inserire dati mancanti qualora fosse necessario
+
 # DIR-001
 
 - Come direttore, voglio consultare il numero di studenti in una classe, così da poter sapere dove aggiungere o spostare un alunno
 
 # DIR-002
 
-- Come direttore, voglio poter licenziare un docente, così da poterlo sostituire nel caso fosse necessario
+- Come direttore, voglio poter eliminare un docente, così da poterlo licenziare e sostituire nel caso fosse necessario
 
 # DIR-003
 
 - Come direttore, voglio poter inserire le circolari in bacheca, così da essere visualizzate da studenti e docenti
+
+# DIR-004
+
+- Come direttore, voglio poter visualizzare la media di una classe, così da avere un idea dell'andamento generale che mi permetta di "equilibrare" le classi
+
+# DIR-005
+
+- Come direttore, voglio poter visualizzare le lezioni svolte da un docente in una classe, così da avere un idea del regolare svolgersi delle lezioni
 
 # DOC-001
 
@@ -180,11 +194,10 @@ Faccio Login - entro all'interno del corso - non sono iscritto al corso! -> visu
 
 NFR-01 - Prestazioni - Aggiornamento voti - Meno di 3 secondi per aggiornare il voto - Test di carico - DOC-001
 
-NFR-02 - Prestazioni - Apertura dell'orario nel picco - Almeno 5 docenti nello stesso minuto -
-Test di carico - DOC-003
+NFR-02 - Prestazioni - Apertura dell'orario nel picco - Almeno 5 docenti nello stesso minuto - Test di carico - DOC-003
 
 NFR-03 - Usabilità - Accesso veloce alla bacheca - Due tasti per accedere - Consulto con studente - STU-003
 
-NFR-04 - Usabilità - Accesso veloce al registro studenti - Due tasti per accedere - Consulto con studente - DOC-002
+NFR-04 - Usabilità - Due tasti per accesso veloce al registro studenti - Due tasti per accedere - Consulto con studente - DOC-002
 
-NFR-05 - Usabilità - Accesso veloce al materiale dei docenti - Due tasti per accedere - Consulto con studente
+NFR-05 - Usabilità - Accesso veloce al materiale dei docentr accedere - Consulto con studente
