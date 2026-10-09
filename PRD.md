@@ -25,9 +25,9 @@
 
 ### Perché esiste ScuolaChill
 
-**Dal lato business.** In una scuola come il CFP Don Bosco di San Donà di Piave il materiale didattico, le verifiche e i voti passano spesso da strumenti diversi, e chi dirige l'istituto fatica ad avere una visione d'insieme. ScuolaChill riunisce tutto in un unico posto: il Direttore controlla l'andamento della scuola, i docenti gestiscono materiale, verifiche e voti senza lavoro doppio, gli studenti trovano ciò che serve per studiare senza chiedere a nessuno.
+**Dal lato business.** In una scuola il materiale didattico, le verifiche e i voti passano spesso da strumenti diversi, e chi dirige l'istituto fatica ad avere una visione d'insieme. ScuolaChill riunisce tutto in un unico posto: il Direttore controlla l'andamento della scuola, i docenti gestiscono materiale, verifiche e voti e gli studenti trovano ciò che serve per studiare senza chiedere a nessuno.
 
-**Dal lato tecnico.** ScuolaChill è un sistema web con tre ruoli, ognuno con permessi diversi. Il Direttore crea gli account e le classi e ha visibilità completa su ciò che accade nell'istituto. Il Docente carica il materiale didattico, crea verifiche e compiti e registra le valutazioni. Lo Studente consulta materiali, voti e pagella e svolge le verifiche e i compiti che gli vengono assegnati. Ogni utente accede con le proprie credenziali e può fare solo ciò che il suo ruolo prevede. Il sistema è utilizzabile sia da PC sia da smartphone.
+**Dal lato tecnico.** ScuolaChill è una web app con tre ruoli, ognuno con permessi diversi. Il Direttore crea gli account e le classi e ha visibilità completa su ciò che accade nell'istituto. Il Docente carica il materiale didattico, crea verifiche e compiti e registra le valutazioni. Lo Studente consulta materiali, voti e pagella e svolge le verifiche e i compiti che gli vengono assegnati. Ogni utente accede con le proprie credenziali e può fare solo ciò che il suo ruolo prevede. Il sistema è utilizzabile sia da PC sia da smartphone.
 
 ### Cosa è incluso
 
@@ -109,11 +109,11 @@ Il CFP Don Bosco di San Donà di Piave, un centro di formazione professionale. I
 
 ### Gli archetipi
 
-| ID      | Archetipo | Contesto d'uso                                                                                                                                                                                                                           | Competenze digitali                                                        | Dispositivo principale                                                          | Frequenza d'uso                                         |
-| ------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| ARC-001 | Direttore | Dall'ufficio, con poco tempo a disposizione. Crea account e classi a inizio anno, gestisce l'orario, trasferisce studenti, controlla le medie delle classi e pubblica le circolari.                                                      | Medie: usa il computer ogni giorno, ma è poco esperto di strumenti tecnici | PC                                                                              | Ogni giorno, per brevi sessioni                         |
-| ARC-002 | Docente   | In aula, tra una lezione e l'altra, e a casa per preparare materiali e correggere verifiche. Scrive l'agenda, assegna compiti e voti, annotazioni e voto finale di materia. Se è coordinatore, inserisce anche il voto di comportamento. | Da basse a medie: alcuni molto pratici, altri poco                         | PC in aula e a casa                                                             | Ogni giorno di lezione; più intensa a fine quadrimestre |
-| ARC-003 | Studente  | In aula e in laboratorio per le verifiche, in corridoio tra una lezione e l'altra, a casa per studiare e consegnare i compiti. Consulta materiale, agenda, voti, note e pagella.                                                         | Alte con lo smartphone, medie con il PC                                    | Smartphone in corridoio e a casa; PC in aula, in laboratorio e per le verifiche | Ogni giorno di lezione                                  |
+| ID      | Archetipo | Contesto d'uso                                                                                                                                                                                                                           | Competenze digitali                                                        | Dispositivo principale                                                          | Frequenza d'uso                 |
+| ------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------- |
+| ARC-001 | Direttore | Dall'ufficio, con poco tempo a disposizione. Crea account e classi a inizio anno, gestisce l'orario, trasferisce studenti, controlla le medie delle classi e pubblica le circolari.                                                      | Medie: usa il computer ogni giorno, ma è poco esperto di strumenti tecnici | PC                                                                              | Ogni giorno, per brevi sessioni |
+| ARC-002 | Docente   | In aula, tra una lezione e l'altra, e a casa per preparare materiali e correggere verifiche. Scrive l'agenda, assegna compiti e voti, annotazioni e voto finale di materia. Se è coordinatore, inserisce anche il voto di comportamento. | Da basse a medie: alcuni molto pratici, altri poco                         | PC in aula e a casa                                                             | Ogni giorno di lezione          |
+| ARC-003 | Studente  | In aula e in laboratorio per le verifiche, in corridoio tra una lezione e l'altra, a casa per studiare e consegnare i compiti. Consulta materiale, agenda, voti, note e pagella.                                                         | Alte con lo smartphone, medie con il PC                                    | Smartphone in corridoio e a casa; PC in aula, in laboratorio e per le verifiche | Ogni giorno di lezione          |
 
 ---
 
@@ -575,8 +575,6 @@ Sezione da completare dopo un'intervista a uno studente del primo anno (DIP-05),
 | Pubblicazione delle pagelle     | circa 125          | 25% degli studenti apre la pagella nei primi minuti                                  |
 | Scuola raddoppiata (NFR-14)     | circa 270          | Il doppio del picco massimo (135)                                                    |
 
-I picchi non coincidono: il valore da usare per dimensionare il sistema è il più alto, cioè circa 135 utenti contemporanei. Il picco più pesante per il sistema resta quello delle verifiche, perché ogni utente scrive e salva dati di continuo, mentre alle 8:00 la maggior parte degli utenti si limita a leggere.
-
 ### Profilo di carico
 
 | Operazione                                      | Frequente?                | Pesante? | Critica? | Note                                                                                                                         |
@@ -602,5 +600,3 @@ I picchi non coincidono: il valore da usare per dimensionare il sistema è il pi
 | Consegne dei compiti (file) | circa 25 GB  | 500 studenti, circa 50 consegne all'anno, circa 1 MB ciascuna |
 
 I dati di testo (voti, lezioni, annotazioni) occupano poche decine di MB, mentre quasi tutto lo spazio è dei file. Questa stima serve per il dimensionamento e per i costi.
-
-_[Da scrivere: scelte tecnologiche, architettura, API, persistenza e modello dei dati, sicurezza e integrazione, qualità architetturale, dimensionamento e costi, piano di deployment.]_
